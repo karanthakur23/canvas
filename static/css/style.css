@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#canvas {
+    border: 2px solid black;
+}
+
+/* Add styles for the button */
+button {
+    padding: 10px 20px;
+    background-color: #113813;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add styles for button hover effect */
+button:hover {
+background-color: #106012;
+}
+
+/* color picker */
+h2 {
+background-color: #dbdbdb;
+margin: 0;
+margin-bottom: 15px;
+padding: 10px;
+font-family: 'Open Sans';
+}
+
+#color-input {
+display: none;
+}
+
+#color-label {
+margin-left: 15px;
+position: absolute;
+height: 30px;
+width: 50px;
+}
+
+#color-input:checked ~ #color-picker {
+opacity: 1;
+}
+
+#color-picker {
+display: flex; /* Use flexbox to arrange the canvases side by side */
+position: absolute;
+left: 150px;
+background-color: white;
+height: 150px;
+width: 185px; /* Increased width to accommodate both canvases */
+border: solid 1px #ccc;
+opacity: 0;
+padding: 5px;
+}
+
+canvas {
+margin-right: 5px; /* Add some spacing between the canvases */
+}
+
+canvas:hover {
+cursor: crosshair;
+}
